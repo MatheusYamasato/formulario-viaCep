@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../Home/favicon.ico">
+    <title>ResiliaFlix</title>
+</head>
+
+<body class="bg-dark">
+
+    <header>
+        <!--INICIO NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark relative-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./imgs/resilialg.png" alt="" width="150" height="50">
+                </a>
+
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main-content" id="main-container">
+
+        <section class="d-flex-column justify-content-center bg-dark">
+            <h1 class="text-center pb-2 m-0 fonte-titulo">Filmes, séries e muito mais.
+            </h1>
+            <h4 class="text-center pb-2 m-0 fonte-titulo">Assista onde quiser. Cancele quando quiser. <br> Pronto para assistir? Informe seus dados para criar ou reiniciar sua assinatura.</h4>
+
+        </section>
+
+        <section class="container-fluid bg-dark" id="container">
+            <form id="campo-form" class="d-flex justify-content-center w-100">
+                <div class="dados m-4">
+                    <label class="text-center" for="nome">Nome</label>
+                    <input type="text" id="nome" class="form-control w-1000" id="email" aria-required="true">
+
+                    <label class="text-center" for="email">Email</label>
+                    <input  required="required" type="email" id="email" class="form-control w-100" placeholder="seuemail@dominio.com">
+
+                    <label class="text-center" for="senha">Senha</label>
+                    <input type="password" id="senha" class="form-control w-100" >
+
+                    <label class="text-center" for="senhac">Confirme a senha</label>
+                    <input type="password" id="senhac" class="form-control w-100" >
+
+                    <label class="text-center" for="rg">RG</label>
+                    <input maxlength="9" type="text" id="rg" class="form-control w-100"  placeholder="XX.XXX.XXX-X">
+
+                    <label class="text-center" for="cep">CEP</label>
+                    <input maxlength="8" type="tel" id="cep" class="form-control w-100"  placeholder=" XXXXX-XXX">
+                </div>
+                <div class="endereco m-4">
+                    <label class="text-center" for="logradouro">Logradouro</label>
+                    <input type="text" id="logradouro" class="form-control w-100" readonly>
+
+                    <label class="text-center" for="numero">Numero</label>
+                    <input type="number" id="numero" class="form-control w-100" >
+
+                    <label class="text-center" for="complemento">Complemento</label>
+                    <input type="text" id="complemento" class="form-control w-100" >
+
+                    <label class="text-center" for="bairro">Bairro</label>
+                    <input type="text" id="bairro" class="form-control w-100" readonly >
+
+                    <label class="text-center" for="localidade">Cidade</label>
+                    <input type="text" id="localidade" class="form-control w-100" readonly >
+
+                    <label class="text-center" for="uf">Estado</label>
+                    <input type="text" id="uf" class="form-control w-100" readonly>
+                </div>
+                
+            </form>
+            
+            <div class="d-flex justify-content-center pb-4">
+                <button type="submit" id="botao-enviar" class="btn btn-outline-success w-15 mt-3">Cadastrar</button>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
